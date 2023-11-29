@@ -3,6 +3,7 @@ const people = [
         name : "Dibor Gabriel",
         age : 25,
         gender : "Male",
+        dept : "Biochemistry",
         location : "Lagos",
         image :"Crispin.jpg",
         relatioshipStatus : "Married",
@@ -12,6 +13,7 @@ const people = [
         name : "Funmilayo Kuti",
         age : 22,
         gender : "Female",
+        dept : "Survey",
         location : "Sagamu",
         image :"Funmi.jpg",
         relatioshipStatus : "Single",
@@ -20,6 +22,7 @@ const people = [
     {
         name : "Eze Kamsi",
         age : 23,
+        dept : "Pharmacy",
         gender : "Male",
         location : "Awka",
         image :"Kamsi.jpg",
@@ -29,6 +32,7 @@ const people = [
     {
         name : "Okonkwo Ruth",
         age : 20,
+        dept : "Agriculture",
         gender : "Female",
         location : "Awka",
         image :"Ruth.jpg",
@@ -38,6 +42,7 @@ const people = [
     {
         name : "Okereke Henry",
         age : 27,
+        dept : "Biochemistry",
         gender : "Male",
         location : "Lagos",
         image :"Bobby.jpg",
@@ -47,6 +52,7 @@ const people = [
     {
         name : "Nmerem Onyedika",
         age : 26,
+        dept : "Biochemistry",
         gender : "Male",
         location : "Onitsha",
         image :"AD.jpg",
@@ -56,6 +62,7 @@ const people = [
     {
         name : "Michael Victor",
         age : 22,
+        dept : "Biochemistry",
         gender : "Male",
         location : "Enugu",
         image :"Meek.jpg",
@@ -65,6 +72,7 @@ const people = [
     {
         name : "Oriowo Tosin",
         age : 27,
+        dept : "Agriculture",
         gender : "Male",
         location : "Sagamu",
         image :"Oriowo.jpg",
@@ -74,6 +82,7 @@ const people = [
     {
         name : "Becky Ann",
         age : 25,
+        dept : "Accounting",
         gender : "Female",
         location : "Awka",
         image :"Becky.jpg",
@@ -83,6 +92,7 @@ const people = [
     {
         name : "Ken",
         age : 25,
+        dept : "Microbiology",
         gender : "Male",
         location : "Awka",
         image :"Ken.jpg",
@@ -93,6 +103,7 @@ const people = [
         name : "Chukwu Elvis",
         age : 25,
         gender : "Male",
+        dept : "Biochemistry",
         location : "Awka",
         image :"Elvis.jpg",
         relatioshipStatus : "Single",
@@ -101,6 +112,7 @@ const people = [
     {
         name : "Bella Bella",
         age : 22,
+        dept : "Biochemistry",
         gender : "Female",
         location : "Awka",
         image :"Bella.jpg",
@@ -110,6 +122,7 @@ const people = [
     {
         name : "Achor Victor",
         age : 22,
+        dept : "Biochemistry",
         gender : "Male",
         location : "Abuja",
         image :"Achor.jpg",
@@ -141,6 +154,7 @@ nextBtn.addEventListener("click", () =>{
     const person = iterator.next().value;
     img.src = person.image;
     profileInfo.querySelector("h3").textContent = person.name
+    profileInfo.querySelector("h5").textContent = `${person.name} studied ${person.dept}`
     profileInfo.querySelectorAll("p")[0].textContent = `${person.age} years old`;
     profileInfo.querySelectorAll("p")[1].textContent = ` from ${person.location}, Nigeria`;
     profileInfo.querySelectorAll("p")[2].textContent = person.relatioshipStatus;
@@ -148,6 +162,7 @@ nextBtn.addEventListener("click", () =>{
 
     if (person.relatioshipStatus == "Married") {
         img.style.borderColor = "red";
+
     } else{
         img.style.borderColor = "green";
     }
