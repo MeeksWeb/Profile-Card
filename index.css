@@ -43,9 +43,16 @@ button {
 button:hover { 
      background:
      #fff; color: purple; 
+     background: purple;
+     color: #fff; 
+     border: 1px solid #ccc; 
+     border-radius: 10px; 
+     width: 120px;
+     height: 50px;
+     margin: 10px; 
      }
 
-@media screen and (max-width: 668px) {
+@media screen and (max-width: 670px) {
      body {
           font-size: 15px;
      }
