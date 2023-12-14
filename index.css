@@ -12,6 +12,7 @@ body {
      border-radius: 9px; 
      box-shadow: 0 0 10px #362d2d;
      text-align: center; 
+     overflow: none;
      } 
 
 .container:hover {
