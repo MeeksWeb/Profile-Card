@@ -68,7 +68,15 @@ button:hover {
      button {
           width: 120px;
           height: 40px;
-          margin: 0; 
+     }
+     button:hover {
+          background: purple;
+          color: #fff; 
+          border: 1px solid #ccc; 
+          border-radius: 10px; 
+          width: 120px;
+          height: 40px;
+          margin: 10px; 
      }
 }
 
