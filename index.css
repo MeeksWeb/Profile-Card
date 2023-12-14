@@ -42,7 +42,11 @@ button:hover {
      #fff; color: purple; 
      }
 
-
+@media screen and (max-width: 668px) {
+     .container {
+          width: 300px;
+     }
+}
 
 
 
