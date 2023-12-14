@@ -41,8 +41,8 @@ button {
      font-size: inherit; 
      } 
 button:hover { 
-     background:
-     #fff; color: purple; 
+     background: purple;
+     color: #fff; 
      background: purple;
      color: #fff; 
      border: 1px solid #ccc; 
@@ -66,10 +66,18 @@ button:hover {
           margin-top: 1px;
      }
      button {
+          background: purple;
+          color: #fff; 
+          border: 1px solid #ccc; 
+          border-radius: 10px;
           width: 120px;
           height: 40px;
      }
      button:hover {
+          background: purple;
+          color: #fff; 
+          border: 1px solid #ccc; 
+          border-radius: 10px;
           height: 40px;
           margin: 10px; 
      }
